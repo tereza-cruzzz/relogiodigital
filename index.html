@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital Completo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+    <div class="container">
+
+        <h1>🕒 Relógio Digital Completo</h1>
+
+        <div id="relogio" class="relogio">
+            00:00:00
+        </div>
+
+        <div id="data" class="data"></div>
+
+        <div class="botoes">
+            <button onclick="alternarFormato()">
+                12h / 24h
+            </button>
+
+            <button onclick="alternarTema()">
+                🌙 Tema
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>⏱ Cronômetro</h2>
+
+            <div id="cronometro" class="display">
+                00:00:00
+            </div>
+
+            <button onclick="iniciarCronometro()">
+                Iniciar
+            </button>
+
+            <button onclick="pausarCronometro()">
+                Pausar
+            </button>
+
+            <button onclick="resetarCronometro()">
+                Resetar
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>⏳ Temporizador</h2>
+
+            <input
+                type="number"
+                id="tempoTimer"
+                placeholder="Segundos">
+
+            <button onclick="iniciarTimer()">
+                Iniciar Timer
+            </button>
+
+            <div id="timer" class="display">
+                00:00
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
